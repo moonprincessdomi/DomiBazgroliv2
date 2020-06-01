@@ -1,0 +1,24 @@
+<main>
+    <h2>Guests list</h2>
+    <label>name:
+        <input #inputGuestName 
+        [(ngModel)]="name" 
+        placeholder="name"
+        (keydown.enter) = "addGuest($event.target.value)"
+        />
+        <button (click)="addGuest(inputGuestName.value)">submit</button>
+    </label>
+    <div>
+        <ul class="guest-list">
+            <li *ngFor="let guest of guestlist"
+            (click) = "onSelect(guest)">
+            <div>{{guest.name | uppercase}}</div></li>
+        </ul>
+    </div>
+    <div *ngIf="selectedGuest">
+        <h2>{{selectedGuest.name | uppercase}} Details</h2>
+        <div>
+            <input [(ngModel)]="selectedGuest.name" placeholder="name">
+        </div>
+    </div>
+</main>

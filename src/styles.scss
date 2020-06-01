@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+$main-color: rgb(107, 107, 107);
+$main-text-color:white;
+$main-padding:20px;
+$main-margin:15px;
+$main-font: Arial, Helvetica, sans-serif;
+
+main{
+    font-family: $main-font;
+    color:$main-color;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+button{
+    border: none;
+    color: $main-text-color;
+    background-color: $main-color;
+    font-weight: bold;
+    padding:10px;
+}
+
+button:focus{
+    outline: none;
+    border:none;
+}
+
+button:hover{
+    outline: none;
+    border:none;
+    background-color: lightgray;
+}
+input{
+    margin: 0 15px 0 15px;
+    border:none;
+    border-bottom: 3px solid #888;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Aldrich';
+    color: $main-color;
+}
+
+input:focus{
+    outline:none;
+    border-bottom: 3px solid lightblue;
+}
+
+h2{
+    text-align: center;
+}

@@ -1,0 +1,6 @@
+<div *ngIf="selectedGuest" class = "modal-element" >
+    <h2>{{selectedGuest.name | uppercase}} Details</h2>
+    <div>
+        <input [(ngModel)]="selectedGuest.name" placeholder="name">
+    </div>
+</div>

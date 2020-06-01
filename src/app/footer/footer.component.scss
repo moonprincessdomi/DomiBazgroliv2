@@ -1,0 +1,18 @@
+$main-bg-color: rgb(107, 107, 107);
+$main-text-color:white;
+$main-padding:20px;
+$main-margin:15px;
+$main-font: Arial, Helvetica, sans-serif;
+
+footer{
+    bottom:0;
+    position:fixed;
+    width: 100%;
+    p{
+        text-align: center;
+        padding: 15px;
+        background-color: transparent;
+        color:$main-bg-color;
+        font-family: $main-font ;
+    }
+}

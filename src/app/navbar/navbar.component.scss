@@ -1,0 +1,23 @@
+
+$main-bg-color: rgb(107, 107, 107);
+$main-text-color:white;
+$main-padding:20px;
+$main-margin:15px;
+$main-font: Arial, Helvetica, sans-serif;
+
+nav{
+    background-color: $main-bg-color;
+    color: $main-text-color;
+    height: 50px;
+    padding:10px;
+    font-family: $main-font;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    label{
+        font-size:30px;
+        font-weight: bold;
+    }
+
+}
